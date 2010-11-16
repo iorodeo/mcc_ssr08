@@ -1,0 +1,13 @@
+Installation Instructions
+-------------------------
+
+*. instructions for installing the C library can be found in the INSTALL file in the
+   linux/mcc_ss08/lib directory.
+
+*. instructions for installing the python package can be found in the INSTALL file in the 
+   linux/mcc_ss08/python directory
+
+Note, the python package depends upon the C library so the C library should be installed
+first.
+
+

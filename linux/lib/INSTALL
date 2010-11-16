@@ -1,0 +1,19 @@
+Installation Instructions
+-------------------------
+
+1. Create a build directory: 
+   mkdir build
+
+2. cd into the build directory: 
+   cd build
+
+3. cmake ../src 
+
+4. make
+
+5. sudo make install
+
+6. sudo ldconfig
+
+
+

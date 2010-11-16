@@ -1,0 +1,10 @@
+mcc_ssr08/linux
+
+Contents:
+
+A simple C library for talking to the Measurement Computing USB-SSR08 solid 
+state relay devices. 
+
+A python package which provides a ctypes based wrapper to the C library.
+
+

@@ -1,0 +1,22 @@
+mcc_ssr08 Installation Instructions
+====================================
+
+Requirements:
+
+1. Warren Jasper's libmcchid library ftp://lx10.tx.ncsu.edu/pub/Linux/drivers/USB/
+   MCCLIBHID.1.39.tgz
+
+2. libmcc_ssr08  (included in this project)
+
+
+Installation:
+
+The package uses the Python setuptools, you can build it by calling
+
+python setup.py install
+
+which installs the package on your system.  See the "Installing Python
+Modules" manual inside your Python documentation or at
+http://docs.python.org/inst/inst.html if you want to customize the
+build process or the target location.
+

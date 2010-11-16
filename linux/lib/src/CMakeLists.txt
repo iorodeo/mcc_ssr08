@@ -1,0 +1,11 @@
+cmake_minimum_required(VERSION 2.8)
+project(mcc_ssr08)
+include_directories("/usr/local/include/libhid")
+add_executable(test_${PROJECT_NAME} ${PROJECT_NAME}.c test_${PROJECT_NAME}.c)
+add_library(${PROJECT_NAME} SHARED ${PROJECT_NAME}.c)
+target_link_libraries(test_${PROJECT_NAME} m hid usb mcchid)
+target_link_libraries(${PROJECT_NAME} m hid usb mcchid)
+set_target_properties(${PROJECT_NAME} PROPERTIES VERSION 1.0 SOVERSION 1.0)
+install(TARGETS ${PROJECT_NAME} DESTINATION lib)
+install(FILES ${PROJECT_NAME}.h DESTINATION include)
+
