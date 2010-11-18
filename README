@@ -1,6 +1,6 @@
-mcc_ssr08 - linux and windows interface to the Measurement Computing USB-SSR08
+mcc_ssr08 - provides linux and windows interfaces for the Measurement Computing USB-SSR08
 solid state relay device.
 
 linux: C library + ctypes based python wrapper
 
-window: Matlab mex file interface.
+windows: Matlab mex file interface.
