@@ -1,0 +1,68 @@
+mcc_ssr08 - mex file installation instructions
+---------------------------------------------
+
+Requirements:
+
+1. Matlab 2010a or later (I think). I've only tested it with 2010a.
+
+2. Measurement Computing's Universal Library version 6.0. Use the CD accompanying 
+   the device or download from Measurement Computing 
+   http://www.mccdaq.com/usb-data-acquisition/USB-SSR-Series.aspx 
+
+   If you downloaded you will want to install InstaCal and Universal Library.
+
+3. Microsoft Visual Studio 10.0 - for compiling the mex file. Matlab's lcc compiler
+   will not work. 
+
+   For this I used the free version "Visual Studio Express 2010" which can be
+   downloaded from here http://www.microsoft.com/express/Downloads/#
+
+   Note, in order to get the visual studio express 2010 compiler to work with
+   Matlab 2010a it is necessary to apply a patch to Matlab. The patch can be
+   downloaded from here: 
+   http://www.mathworks.com/support/solutions/en/data/1-D5W493/?solution=1-D5W493
+
+   Follow the instructions on the page. Note, the patch is given on the bottom
+   of the page: VS2010MEXSupport.zip 
+
+   The instructions come boil down to applying the patch by running 
+
+   unzip('path to zip file', matlabroot) 
+
+   from the Matlab command prompt and
+
+   mex -setup
+
+   also from the matlab command prompt during which you should select the 
+   Microsoft Visual C++ 2010 Express compiler.
+   
+   Depending on your setting you may need to run Matlab as an administrator in
+   order to run the commands above.
+
+4. Mercurial (if you want to use revision control)
+
+   Download from here: http://mercurial.selenic.com/
+
+   If you want to use mercurial from the command line check to make sure that
+   mercurial is on your windows path.
+   
+   Typing hg and the command prompt should give you a basic help message.
+
+
+Building the mex file:
+----------------------
+
+1. Download the project files to the location of your choice. The top level
+   directory of the project should be called mcc_ssr08. 
+   
+2. Start Matlab and changed directory to the mcc_ssr08\windows\matlab directory.
+
+3. Run the command buid_mcc_ssr08. If all goes well it should run quietly - no
+   messages.
+
+Installation:
+-------------
+
+1. Add the directory mcc_ssr08\windows\matlab to your Matlab path. 
+  
+
