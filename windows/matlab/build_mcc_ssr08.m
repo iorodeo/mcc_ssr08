@@ -3,5 +3,5 @@ function build_mcc_ssr08
 %
 % Usage: 
 % build_mcc_ssr08
-% 
-mex mcc_ssr08.c -L.\ -lcbw32
+%
+mex -I'C:\Users\Public\Documents\Measurement Computing\DAQ\C'  -L'C:\Users\Public\Documents\Measurement Computing\DAQ\C'  mcc_ssr08.c -L.\ -lcbw32
