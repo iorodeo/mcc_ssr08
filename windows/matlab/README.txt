@@ -26,6 +26,13 @@ Examples:
  mcc_ssr08(0, 'alllo')
  mcc_srr08(0, 'setvalue', 122)
 
+Note, the first time the function is called (during a Matlab session) it is a bit slow - as 
+the library is being loaded. Subsequent calls are very fast. For this reason programs using
+the mcc_ssr08 function in time critical section might want to call it at least once in some
+non-critical section (like an initialization routine). 
+
+Also note the library can always be cleared from memory using "mex clear". 
+
 
 mcc_ssr08 may be freely distributed and modified in accordance with the Apache
 2.0  License.
