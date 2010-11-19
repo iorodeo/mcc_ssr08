@@ -24,3 +24,5 @@
 %  mcc_ssr08(0, 'alllo')
 %  mcc_srr08(0, 'setvalue', 122)
 %
+% mcc_ssr08 may be freely distributed and modified in accordance with the Apache
+% 2.0  License.

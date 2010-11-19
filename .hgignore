@@ -11,6 +11,7 @@ syntax: glob
 *.komodo*
 *.egg-info
 *.mexw32
+*.asv
 build
 dist
 .komodo*
