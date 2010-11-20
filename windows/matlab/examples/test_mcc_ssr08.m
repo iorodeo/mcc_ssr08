@@ -13,7 +13,6 @@ function test_mcc_ssr08(board_num)
 
 dt_long = 1.0;
 dt_short = 0.02;
-board_num = 0;
 
 fprintf('flashing LED\n');
 mcc_ssr08(board_num,'flashled');
