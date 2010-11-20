@@ -12,6 +12,7 @@ syntax: glob
 *.egg-info
 *.mexw32
 *.asv
+*.csv
 build
 dist
 .komodo*

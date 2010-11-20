@@ -33,6 +33,9 @@ non-critical section (like an initialization routine).
 
 Also note the library can always be cleared from memory using "mex clear". 
 
+Some example function using the mcc_ssr08 command can be found in the examples
+directory.  There are also two functions giving examples of how to generate
+curves suitable for downloading into the LinMot E1100 motor controllers.
 
 mcc_ssr08 may be freely distributed and modified in accordance with the Apache
 2.0  License.

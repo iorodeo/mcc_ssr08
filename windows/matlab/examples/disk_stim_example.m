@@ -11,6 +11,10 @@ function disk_stim_example
 % has no way to known when the given command has been completed. it is up
 % to the user to set this correctly. 
 %
+% It is good practice to set all lines to low after trigger a given
+% pattern. This should be done after a suitable pause time. If this is not
+% done it is not possible to trigger the same pattern twice in a row.
+%
 
 board_num = 0;
 move2start_id = 1;
@@ -30,10 +34,12 @@ for i = 1:num_trials
         fprintf('moving to start position\n');
         mcc_ssr08(board_num, 'setvalue', move2start_id);
         pause(move2start_pause_t);
+        mcc_ssr08(board_num, 'alllo'); % Return all lines to low
         
         fprintf('running stimulus id %d\n', id);
         mcc_ssr08(board_num, 'setvalue', id);
         pause(stimulus_pause_t);
+        mcc_ssr08(board_num, 'alllo'); % Return all lines to low
         
     end
 end
@@ -41,3 +47,5 @@ end
 fprintf('moving to start position\n');
 mcc_ssr08(board_num, 'setvalue', move2start_id);
 pause(move2start_pause_t);
+mcc_ssr08(board_num, 'alllo'); % Return all lines to low
+
